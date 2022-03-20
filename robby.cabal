@@ -32,6 +32,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , random
   default-language: Haskell2010
 
 executable robby-exe
@@ -43,6 +44,7 @@ executable robby-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , random
     , robby
   default-language: Haskell2010
 
@@ -56,5 +58,6 @@ test-suite robby-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , random
     , robby
   default-language: Haskell2010
